@@ -1,0 +1,192 @@
+body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    margin-top: 30px;
+    width: 100%;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    background: #000917;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+}
+
+.banner-text {
+    width: 70%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.banner-text h1 {
+    font-size: 32px;
+}
+
+.banner-text p {
+    margin: 8px 0 28px 0;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.banner-text a {
+    margin: 25px 0;
+    padding: 10px 15px;
+    background: red;
+    border-radius: 7px;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+}
+
+.banner-img {
+    margin: 15px 0 0 0;
+}
+
+.banner-img img {
+    width: 300px;
+}
+
+.menu-n-cards {
+    margin: 50px auto;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu a {
+    min-width: 100px;
+    border: 1px solid gray;
+    padding: 12px 15px;
+    color: black;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 10px auto;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+
+.card {
+    width: 450px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card button {
+    margin: 20px;
+    padding: 6px 22px;
+    background: none;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-size: 22px;
+}
+
+.card h3 {
+    margin: 15px;
+    font-size: 24px;
+}
+
+.icons {
+    margin: 20px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.icons img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.icons p {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    background: red;
+    color: white;
+    border: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .banner {
+        flex-direction: row;
+        border-radius: 50px;
+        padding: 25px;
+    }
+
+    .banner-text {
+        text-align: left;
+        width: 50%;
+        padding: 0 100px;
+    }
+
+    .banner-text h1 {
+        font-size: 50px;
+        margin-bottom: 0;
+    }
+
+    .banner-text p {
+        margin-top: 10px;
+    }
+
+    .banner-img {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    .banner-img img {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card {
+        margin-top: 25px;
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu a {
+        padding: 22px 15px;
+        width: 26%;
+        font-size: 26px;
+    }
+
+    .view-all-button {
+        width: 100%;
+        height: 50x;
+    }
+}

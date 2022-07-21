@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container {
+    padding: 10px 8%;
+}
+
+.banner {
+    background: #161616;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 5%;
+}
+.banner-text {
+    width: 40%;
+    height: 100%;
+    padding: 50px 5% 0 5%;
+    color: #fff;
+    align-self: center;
+    margin-bottom: 50px;
+}
+.banner-text a {
+    margin-top: 20px;
+    padding: 10px 10px;
+    background: #DD0000;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.banner-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 52px;
+}
+.banner-text p {
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.banner-img {
+    width: 45%;
+    align-self: flex-end;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+
+.menu-n-posts {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+}
+.menu {
+    width: 280px;
+    height: fit-content;
+    padding: 0 18px;
+    background: #161616;
+    border-radius: 8px;
+}
+.menu a {
+    margin: 18px 0;
+    border-radius: 8px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    padding: 12px;
+    display: block;
+    font-size: 15px;
+    text-align: center;
+}
+.bg-red {
+    background: #DD0000!important;
+    color: #fff!important;
+}
+.posts {
+    margin-left: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.post {
+    border-radius: 8px;
+    color: #161616;
+}
+.post img {
+    width: 100%;
+}
+
+.post button {
+    margin: 5px 12px;
+    padding: 5px 12px;
+    background: none;
+    border-color: #161616;
+    border-radius: 5px;
+}
+
+.post p {
+    padding: 5px 12px 0 12px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.post-2 {
+    padding: 30px 10px;
+}
+
+.flags {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.flags img {
+    width: 80px;
+}
+.flags p {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0 15px;
+}
+
+.country-name {
+    font-weight: bold;
+    font-size: 17px;
+    color: #161616;
+    margin-bottom: 0;
+    text-align: center;
+}
+.match-time {
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+}
+
+.icons {
+    width: 60%;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons img {
+    height: 20px;
+    width: 20px;
+}
+
+
+footer {
+    width: 100%;
+    background: #161616;
+}
+
+.footer-link {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h3 {
+    margin: 0 50px;
+    padding: 100px 0 50px 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+
+.footer-link a {
+    color: #B9B9B9;
+    text-decoration: none;
+}
+
+.ani:hover {
+    transform: scale(0.95);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .menu-n-posts {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .menu {
+        width: 100%;
+        display: flex;
+        background: none;
+        justify-content: space-between;
+    }
+    .menu a {
+        width: 32%;
+    }
+    .posts {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .footer-link {
+        flex-wrap: 2;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .banner {
+        flex-direction: column;
+    }
+    .banner-text {
+        width: auto;
+        text-align: center;
+    }
+    .banner-text h1 {
+        font-size: 30px;
+    }
+    .banner-img {
+        margin: 0 auto;
+        width: 250px;
+    }
+    .posts {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .menu {
+        flex-direction: column;
+    }
+    .menu a {
+        min-width: 180px;
+        margin: 10px auto;
+    }
+    .footer-link {
+        padding: 10px 50px;
+        flex-direction: column;
+    }
+    .footer-link a {
+        margin: 15px auto;
+    }
+    footer h3 {
+        padding-top: 50px;
+        padding-bottom: 30px;
+        font-size: 24px;
+    }
+}

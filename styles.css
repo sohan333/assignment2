@@ -170,7 +170,7 @@ footer {
 .footer-link {
     padding: 50px 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 footer h3 {
@@ -184,6 +184,7 @@ footer h3 {
 }
 
 .footer-link a {
+    margin: 0 10px;
     color: #B9B9B9;
     text-decoration: none;
 }
@@ -217,7 +218,7 @@ footer h3 {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     .footer-link {
-        flex-wrap: 2;
+        flex-wrap: wrap;
     }
 }
 
